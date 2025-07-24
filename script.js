@@ -47,5 +47,4 @@ let product = {
   unit: 10,
 };
 
-console.log(product.name);
-
+console.log(product);
