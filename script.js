@@ -38,3 +38,14 @@ console.log(newFind);
 //indexOf
 let index = data.indexOf(14);
 console.log(index);
+
+console.log("-----------Object----------");
+let product = {
+  name: "Apple",
+  price: 250,
+  cat: "fruits",
+  unit: 10,
+};
+
+console.log(product.name);
+
