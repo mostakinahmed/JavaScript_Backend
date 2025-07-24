@@ -1,4 +1,4 @@
-const { log } = require("node:console");
+const { log, error } = require("node:console");
 const fs = require("node:fs");
 
 //--------file create----------
@@ -36,6 +36,7 @@ const fs = require("node:fs");
 fs.copyFile("info.txt", "./copy/copyData.txt", function (err) {
   if (err) {
     console.error("Error");
+    // console.error(err.message);
   } else {
     console.log("copy succesfull");
   }
