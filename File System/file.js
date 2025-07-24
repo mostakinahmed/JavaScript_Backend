@@ -1,4 +1,3 @@
-const { log, error } = require("node:console");
 const fs = require("node:fs");
 
 //--------file create----------
@@ -33,11 +32,20 @@ const fs = require("node:fs");
 // });
 
 //--------file Copy----------
-fs.copyFile("info.txt", "./copy/copyData.txt", function (err) {
+// fs.copyFile("info.txt", "./copy/copyData.txt", function (err) {
+//   if (err) {
+//     console.error("Error");
+//     // console.error(err.message);
+//   } else {
+//     console.log("copy succesfull");
+//   }
+// });
+
+//----------File Read-----------
+fs.readFile("info.txt", "utf8", function (err, data) {
   if (err) {
     console.error("Error");
-    // console.error(err.message);
   } else {
-    console.log("copy succesfull");
+    console.log(data);
   }
 });
