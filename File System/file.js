@@ -24,10 +24,19 @@ const fs = require("node:fs");
 // );
 
 //--------file Rename----------
-fs.rename("data.txt", "info.txt", function (err) {
+// fs.rename("data.txt", "info.txt", function (err) {
+//   if (err) {
+//     console.error("Error");
+//   } else {
+//     console.log("rename succesfull");
+//   }
+// });
+
+//--------file Copy----------
+fs.copyFile("info.txt", "./copy/copyData.txt", function (err) {
   if (err) {
     console.error("Error");
   } else {
-    console.log("rename succesfull");
+    console.log("copy succesfull");
   }
 });
